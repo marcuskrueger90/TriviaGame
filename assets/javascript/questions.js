@@ -20,3 +20,18 @@ var arsenalQuestion = [
     choices:["Yung Pistols", "Bang", "Gunners", "Jabawakees"],
     correctAnswer: "Gunners"
 }];
+
+
+var correctImages = [
+    "./assets/images/arseneclap.gif",
+    "./assets/images/henryslide.gif",
+    "./assets/images/iwobicool.gif",
+    "./assets/images/lacastroll.gif"
+];
+
+var wrongImages = [
+    "./assets/images/arsenemad.gif",
+    "./assets/images/ozilNo.gif",
+    "./assets/images/redcard.gif",
+    "./assets/images/vanpersiewhiff.gif"
+];

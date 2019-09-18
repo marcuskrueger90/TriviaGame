@@ -67,7 +67,7 @@ $(document).on('click','.choice', function(){
         setTimeout(nextQuestion, 3000);    }
 });
 function gameResult(){
-    $("#theGame").html("<p> You got "+ score + "question(s) out of " + arsenalQuestion.length + "correct! </p>"+"<p> You got "+ lose + "question(s) wrong </p>" + "<button class= 'btn btn-primary' id= 'restart'> Restart Game </button>")
+    $("#theGame").html("<p> You got "+ score + " question(s) out of " + arsenalQuestion.length + " correct! </p>"+"<p> You got "+ lose + " question(s) wrong </p>" + "<button class= 'btn btn-primary' id= 'restart'> Restart Game </button>")
 }
 $(document).on('click', '#restart', function(){
     counter = 30;
@@ -89,9 +89,9 @@ function loadImage(status){
     var rightAnswer = arsenalQuestion[currentQuestion].correctAnswer
 
     if(status==='win'){
-        $('#theGame').html(`<p class= "preload-image">NICE</p> <img src ="${randomImage(correctImages)}"/>`);
+        $('#theGame').html(`<p class= "preload-image"><b>CORRECT!</b></p> <img src ="${randomImage(correctImages)}"/>`);
     } else {
-        $('#theGame').html(`<p class= "preload-image">LAME!</p> <img src ="${randomImage(wrongImages)}"/>`);
+        $('#theGame').html(`<p class= "preload-image"><b>WRONG!</b></p> <img src ="${randomImage(wrongImages)}"/>`);
     }
 }
 

@@ -5,3 +5,11 @@
     cursor: pointer;
     font-size: 18px;
 }
+h1{
+    font-family: 'New Rocker', cursive;
+}
+
+p{
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+}
